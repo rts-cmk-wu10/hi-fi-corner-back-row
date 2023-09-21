@@ -1,0 +1,31 @@
+.main__article {
+    background-image: url(../design/wavy-lines.avif);
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.main__article-text {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+}
+
+.main__article-second {
+    background-image: url(../Produktbilleder/int_forstaerkere/Manley_Stingray.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 300px;
+    background-size: contain;
+}
+
+.main__article__second-text {
+    color:black;
+}
+
+

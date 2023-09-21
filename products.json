@@ -1,0 +1,110 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "title": "Rotel A10 Stereo Amplifier",
+            "price": 389,
+            "image": "Produktbilleder/forforstaerkere/parasound_halop3.jpg",
+            "categories": {
+                "category": "amplifiers",
+                "subcategory": "preamplifiers"
+            }
+        },
+        {
+            "id": 1,
+            "title": "Quad 2 classic power amplifier",
+            "price": 999,
+            "image": "Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
+            "categories": {
+                "category": "amplifiers",
+                "subcategory": "power_amplifiers"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Quad Atera Solus",
+            "price": 1200,
+            "image": "Produktbilleder/dvdafspillere/creek_classic.jpg",
+            "categories": {
+                "category": "cd_players",
+                "subcategory": ""
+            }
+        },
+        {
+            "id": 3,
+            "title": "Turntable",
+            "price": 20,
+            "image": "Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
+            "categories": {
+                "category": "turntables",
+                "subcategory": ""
+            }
+        },
+        {
+            "id": 4,
+            "title": "Effektforstærker 2000",
+            "price": 2000,
+            "image": "Produktbilleder/effektforstaerkere/manley_mahi.jpg",
+            "categories": {
+                "category": "amplifiers",
+                "subcategory": "power_amplifiers"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Pladeafspiller",
+            "price": 2500,
+            "image": "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
+            "categories": {
+                "category": "record_players",
+                "subcategory": ""
+            }
+        }
+    ],
+    "categories": [
+        {
+            "category": "Amplifiers",
+            "subcategories": [
+                "Integrated Amplifiers",
+                "Power Amplifiers",
+                "Preamplifiers"
+            ]
+        },
+        {
+            "category": "Speakers"
+        },
+        {
+            "category": "Turntables"
+        },
+        {
+            "category": "CD Players"
+        },
+        {
+            "category": "Streamers"
+        },
+        {
+            "category": "Cables"
+        },
+        {
+            "category": "Furniture"
+        },
+        {
+            "category": "Headphones"
+        },
+        {
+            "category": "Home Cinema"
+        },
+        {
+            "category": "Ceiling Speakers"
+        },
+        {
+            "category": "TV"
+        },
+        {
+            "category": "Vinyl"
+        },
+        {
+            "category": "Outlet - Save ££££"
+        }
+    ]
+}
