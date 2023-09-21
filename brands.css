@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: absolute;
+    min-width: 100%;
+}
+
+.background img {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
