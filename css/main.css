@@ -1,5 +1,5 @@
 .main__article {
-    background-image: url(../hi-fi-corner-back-row/design/wavy-lines.avif);
+    background-image: url(../design/wavy-lines.avif);
     display: flex;
     align-items: center;
     min-height: 400px;
@@ -17,7 +17,7 @@
 }
 
 .main__article-second {
-    background-image: url(../hi-fi-corner-back-row/Produktbilleder/int_forstaerkere/Manley_Stingray.jpg);
+    background-image: url(../Produktbilleder/int_forstaerkere/Manley_Stingray.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     height: 300px;
