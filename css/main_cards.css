@@ -1,0 +1,47 @@
+
+.otherEvents__card {
+    display: flex;
+    width: 100%;
+    margin: 16px auto;
+    padding-block-end: 10px;
+
+}
+
+.otherEvents__cardImage {
+    height: 300px;
+    width: 100%;
+
+}
+
+
+.main__section-textCards {
+    height :200px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+
+}
+
+.other__section-cards {
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.headline {
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius: 1px;
+    color: goldenrod;
+}
+
+.underline-text {
+    color: white;
+}

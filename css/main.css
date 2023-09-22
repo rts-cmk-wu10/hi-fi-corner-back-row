@@ -25,7 +25,12 @@
 }
 
 .main__article__second-text {
-    color:black;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 100;
+    top: 984px;
+    left: 100px;
+    color:goldenrod;
 }
 
 
