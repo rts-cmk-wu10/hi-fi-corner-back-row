@@ -1,0 +1,33 @@
+.footer{
+    height: 58px;
+    display: flex;
+    background-color: rgb(173, 138, 49);
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__icons{
+    position: absolute;
+    margin: 8px;
+    right: 172px;
+    font-size: 22px;
+    gap: 12px;
+    display: flex;
+}
+
+.footer__icons-socialMedia{
+    position: absolute;
+    margin: 7px;
+    right: 42px;
+    font-size: 22px;
+
+}
+
+.footer__links{
+    color: white;
+    margin: 6px;
+
+}

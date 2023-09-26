@@ -1,5 +1,5 @@
 
-.otherEvents__card {
+.main-event__card {
     display: flex;
     width: 100%;
     margin: 16px auto;
@@ -7,14 +7,14 @@
 
 }
 
-.otherEvents__cardImage {
+.main-event__card-image {
     height: 300px;
     width: 100%;
 
 }
 
 
-.main__section-textCards {
+.main__section-text-cards {
     height :200px;
     background-color: black;
     display: flex;
@@ -22,7 +22,7 @@
 
 }
 
-.other__section-cards {
+.main__section-cards {
     padding: 50px;
     display: flex;
     text-align: center;
@@ -34,7 +34,7 @@
 
 }
 
-.headline {
+.main__section-headline {
     padding: 10px;
     margin: 10px;
     border: 1px white solid;
@@ -42,6 +42,6 @@
     color: goldenrod;
 }
 
-.underline-text {
+.main__section-text {
     color: white;
 }

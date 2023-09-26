@@ -1,0 +1,25 @@
+
+.main-event__card-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.main-event__card-image {
+    max-width: 100%; /* Ensure the main images don't exceed their container */
+    display: block; /* Add this to ensure proper layout */
+}
+
+
+.main-event__card-item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px; /* Adjust the icon size as needed */
+    color: white; /* Change the icon color as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Add a semi-transparent background to make the icons visible */
+    padding: 10px; /* Add padding to the icons for better visibility */
+    border-radius: 50%; /* Create a circular background for the icons */
+}

@@ -4,3 +4,11 @@
 @import url("css/category_list.css");
 @import url("css/arrow_buttons.css");
 @import url("css/main_cards.css");
+@import url("css/footer.css");
+@import url("css/overlapping-icons.css");
+
+
+@font-face {
+    font-family: "basic";
+    src: url(museo-sans-rounded-webfont/MuseoSansRounded300.woff);
+}
