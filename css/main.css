@@ -17,15 +17,14 @@
 }
 
 .main__article-second {
-    background-image: url(../Produktbilleder/int_forstaerkere/Manley_Stingray.jpg);
+    padding: 58px;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 300px;
     background-size: contain;
 }
 
 .main__article-second-text {
-    position: absolute;
+    margin: 24px;
     font-size: xx-large;
     font-weight: 100;
     top: 984px;
