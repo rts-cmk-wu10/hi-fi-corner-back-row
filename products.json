@@ -4,7 +4,7 @@
           "id": 1,
           "title": "Creek Classic CD",
           "price": 299.99,
-          "image": "Produktbilleder/cd_afspillere/reek_classic_cd.jpg",
+          "image": "Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
           "categories": {
             "category": "Audio",
             "subcategory": "CD Players"
@@ -154,7 +154,7 @@
           "id": 16,
           "title": "Sennheiser Headphones",
           "price": 149.99,
-          "image": "Produktbilleder/hojtalere/Sennheiser-headphones.jpg",
+          "image": "Produktbilleder/headphones/Sennheiser-headphones.jpg",
           "categories": {
             "category": "Audio",
             "subcategory": "Headphones"
@@ -253,7 +253,7 @@
           "id": 26,
           "title": "Pro-Ject Debut III (Red)",
           "price": 349.99,
-          "image": "Produktbilleder/pladespillere/Pro_ject_DebutIII_red_1.jpg",
+          "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
           "categories": {
             "category": "Turntables"
           }
@@ -262,7 +262,7 @@
           "id": 27,
           "title": "Pro-Ject Debut III (Yellow)",
           "price": 349.99,
-          "image": "Produktbilleder/pladespillere/Pro_ject_DebutIII_yellow_1.jpg",
+          "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
           "categories": {
             "category": "Turntables"
           }
