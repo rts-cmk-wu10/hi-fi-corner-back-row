@@ -1,382 +1,375 @@
 {
-    "products": [
-        {
-          "id": 1,
-          "title": "Creek Classic CD",
-          "price": 299.99,
-
-            "image": "Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
-
-          "categories": {
-            "category": "Audio",
-            "subcategory": "CD Players"
-          }
-        },
-        {
-          "id": 2,
-          "title": "Creek Destiny CD",
-          "price": 349.99,
-          "image": "Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "CD Players"
-          }
-        },
-        {
-          "id": 3,
-          "title": "Creek Evo CD",
-          "price": 399.99,
-          "image": "Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "CD Players"
-          }
-        },
-        {
-          "id": 4,
-          "title": "Creek Classic",
-          "price": 499.99,
-          "image": "Produktbilleder/dvdafspillere/creek_classic.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 5,
-          "title": "Exposure 2010S",
-          "price": 599.99,
-          "image": "Produktbilleder/dvdafspillere/exposure_2010S.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 6,
-          "title": "Parasound D200",
-          "price": 449.99,
-          "image": "Produktbilleder/dvdafspillere/parasound_d200.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 7,
-          "title": "Parasound Halo D3",
-          "price": 799.99,
-          "image": "Produktbilleder/dvdafspillere/parasound_halod3.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 8,
-          "title": "Manley Mahi",
-          "price": 1499.99,
-          "image": "Produktbilleder/effektforstaerkere/manley_mahi.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 9,
-          "title": "Manley Neo-Classic 300B",
-          "price": 2499.99,
-          "image": "Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 10,
-          "title": "Manley Snapper",
-          "price": 1999.99,
-          "image": "Produktbilleder/effektforstaerkere/manley_snapper.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 11,
-          "title": "Parasound Halo A23",
-          "price": 899.99,
-          "image": "Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 12,
-          "title": "Creek OBH 22 Passive Preamp",
-          "price": 199.99,
-          "image": "Produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Preamps"
-          }
-        },
-        {
-          "id": 13,
-          "title": "Parasound Classic 7100",
-          "price": 1099.99,
-          "image": "Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 14,
-          "title": "Parasound Halo P3",
-          "price": 299.99,
-          "image": "Produktbilleder/forforstaerkere/parasound_halop3.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Preamps"
-          }
-        },
-        {
-          "id": 15,
-          "title": "Pro-Ject Pre Box",
-          "price": 99.99,
-          "image": "Produktbilleder/forforstaerkere/Project_prebox.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Preamps"
-          }
-        },
-        {
-          "id": 16,
-          "title": "Harbeth HL7ES2",
-          "price": 1899.99,
-          "image": "Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Speakers"
-          }
-        },
-        {
-          "id": 17,
-          "title": "Harbeth Monitor 30",
-          "price": 2599.99,
-          "image": "Produktbilleder/hojtalere/harbeth_monitor30.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Speakers"
-          }
-        },
-        {
-          "id": 18,
-          "title": "Harbeth P3ES2",
-          "price": 1399.99,
-          "image": "Produktbilleder/hojtalere/harbeth_p3es2.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Speakers"
-          }
-        },
-        {
-          "id": 19,
-          "title": "Creek A50I",
-          "price": 599.99,
-          "image": "Produktbilleder/int_forstaerkere/creek_a50I.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 20,
-          "title": "Creek Classic 5350SE",
-          "price": 799.99,
-          "image": "Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 21,
-          "title": "Creek Destiny Amp",
-          "price": 1199.99,
-          "image": "Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 22,
-          "title": "Manley Snapper",
-          "price": 2499.99,
-          "image": "Produktbilleder/int_forstaerkere/manley_snapper.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 23,
-          "title": "Manley Stingray",
-          "price": 2999.99,
-          "image": "Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 24,
-          "title": "Pro-Ject Debut 3 (Black)",
-          "price": 349.99,
-          "image": "Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
-          "categories": {
-            "category": "Turntables"
-          }
-        },
-        {
-          "id": 25,
-          "title": "Pro-Ject Debut III (Red)",
-          "price": 349.99,
-
-          "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
-          
-          "categories": {
-            "category": "Turntables"
-          }
-        },
-        {
-          "id": 26,
-          "title": "Pro-Ject Debut III (Yellow)",
-          "price": 349.99,
-          
-          "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
-
-          "categories": {
-            "category": "Turntables"
-          }
-        },
-        {
-          "id": 27,
-          "title": "Pro-Ject RPM 10",
-          "price": 999.99,
-          "image": "Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
-          "categories": {
-            "category": "Turntables"
-          }
-        },
-        {
-          "id": 28,
-          "title": "Pro-Ject RPM 5",
-          "price": 799.99,
-          "image": "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
-          "categories": {
-            "category": "Turntables"
-          }
-        },
-        {
-          "id": 29,
-          "title": "Jolida JD102B",
-          "price": 799.99,
-          "image": "Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 30,
-          "title": "Jolida JD202A",
-          "price": 999.99,
-          "image": "Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 31,
-          "title": "Jolida JD300B",
-          "price": 1499.99,
-          "image": "Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 32,
-          "title": "Jolida JD302B",
-          "price": 1999.99,
-          "image": "Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        },
-        {
-          "id": 33,
-          "title": "Jolida JD502B",
-          "price": 2999.99,
-          "image": "Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Amplifiers"
-          }
-        }
+  "products": [
+    {
+      "id": 1,
+      "title": "Creek Classic CD",
+      "price": 299.99,
+      "image": "Produktbilleder/cd_afspillere/creek_classic_cd.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "CD Players"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Creek Destiny CD",
+      "price": 349.99,
+      "image": "Produktbilleder/cd_afspillere/creek_Destiny_CD.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "CD Players"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Creek Evo CD",
+      "price": 399.99,
+      "image": "Produktbilleder/cd_afspillere/creek_evo_cd.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "CD Players"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Creek Classic",
+      "price": 499.99,
+      "image": "Produktbilleder/dvdafspillere/creek_classic.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Exposure 2010S",
+      "price": 599.99,
+      "image": "Produktbilleder/dvdafspillere/exposure_2010S.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Parasound D200",
+      "price": 449.99,
+      "image": "Produktbilleder/dvdafspillere/parasound_d200.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Parasound Halo D3",
+      "price": 799.99,
+      "image": "Produktbilleder/dvdafspillere/parasound_halod3.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Manley Mahi",
+      "price": 1499.99,
+      "image": "Produktbilleder/effektforstaerkere/manley_mahi.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Manley Neo-Classic 300B",
+      "price": 2499.99,
+      "image": "Produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Manley Snapper",
+      "price": 1999.99,
+      "image": "Produktbilleder/effektforstaerkere/manley_snapper.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Parasound Halo A23",
+      "price": 899.99,
+      "image": "Produktbilleder/effektforstaerkere/parasound_haloa23.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Creek OBH 22 Passive Preamp",
+      "price": 199.99,
+      "image": "Produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Preamps"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Parasound Classic 7100",
+      "price": 1099.99,
+      "image": "Produktbilleder/forforstaerkere/parasound_classic7100.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Parasound Halo P3",
+      "price": 299.99,
+      "image": "Produktbilleder/forforstaerkere/parasound_halop3.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Preamps"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Pro-Ject Pre Box",
+      "price": 99.99,
+      "image": "Produktbilleder/forforstaerkere/Project_prebox.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Preamps"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Harbeth HL7ES2",
+      "price": 1899.99,
+      "image": "Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Speakers"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Harbeth Monitor 30",
+      "price": 2599.99,
+      "image": "Produktbilleder/hojtalere/harbeth_monitor30.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Speakers"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Harbeth P3ES2",
+      "price": 1399.99,
+      "image": "Produktbilleder/hojtalere/harbeth_p3es2.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Speakers"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Creek A50I",
+      "price": 599.99,
+      "image": "Produktbilleder/int_forstaerkere/creek_a50I.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Creek Classic 5350SE",
+      "price": 799.99,
+      "image": "Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Creek Destiny Amp",
+      "price": 1199.99,
+      "image": "Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Manley Snapper",
+      "price": 2499.99,
+      "image": "Produktbilleder/int_forstaerkere/manley_snapper.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Manley Stingray",
+      "price": 2999.99,
+      "image": "Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Pro-Ject Debut 3 (Black)",
+      "price": 349.99,
+      "image": "Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
+      "categories": {
+        "category": "Turntables"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Pro-Ject Debut III (Red)",
+      "price": 349.99,
+      "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_red_1.jpg",
+      "categories": {
+        "category": "Turntables"
+      }
+    },
+    {
+      "id": 26,
+      "title": "Pro-Ject Debut III (Yellow)",
+      "price": 349.99,
+      "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
+      "categories": {
+        "category": "Turntables"
+      }
+    },
+    {
+      "id": 27,
+      "title": "Pro-Ject RPM 10",
+      "price": 999.99,
+      "image": "Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
+      "categories": {
+        "category": "Turntables"
+      }
+    },
+    {
+      "id": 28,
+      "title": "Pro-Ject RPM 5",
+      "price": 799.99,
+      "image": "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
+      "categories": {
+        "category": "Turntables"
+      }
+    },
+    {
+      "id": 29,
+      "title": "Jolida JD102B",
+      "price": 799.99,
+      "image": "Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 30,
+      "title": "Jolida JD202A",
+      "price": 999.99,
+      "image": "Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 31,
+      "title": "Jolida JD300B",
+      "price": 1499.99,
+      "image": "Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Jolida JD302B",
+      "price": 1999.99,
+      "image": "Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    },
+    {
+      "id": 33,
+      "title": "Jolida JD502B",
+      "price": 2999.99,
+      "image": "Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
+      "categories": {
+        "category": "Audio",
+        "subcategory": "Amplifiers"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "category": "Amplifiers",
+      "subcategories": [
+        "Integrated Amplifiers",
+        "Power Amplifiers",
+        "Preamplifiers"
       ]
-      ,
-    "categories": [
-        {
-            "category": "Amplifiers",
-            "subcategories": [
-                "Integrated Amplifiers",
-                "Power Amplifiers",
-                "Preamplifiers"
-            ]
-        },
-        {
-            "category": "Speakers"
-        },
-        {
-            "category": "Turntables"
-        },
-        {
-            "category": "CD Players"
-        },
-        {
-            "category": "Streamers"
-        },
-        {
-            "category": "Cables"
-        },
-        {
-            "category": "Furniture"
-        },
-        {
-            "category": "Headphones"
-        },
-        {
-            "category": "Home Cinema"
-        },
-        {
-            "category": "Ceiling Speakers"
-        },
-        {
-            "category": "TV"
-        },
-        {
-            "category": "Vinyl"
-        },
-        {
-            "category": "Outlet - Save ££££"
-        }
-    ]
+    },
+    {
+      "category": "Speakers"
+    },
+    {
+      "category": "Turntables"
+    },
+    {
+      "category": "CD Players"
+    },
+    {
+      "category": "Streamers"
+    },
+    {
+      "category": "Cables"
+    },
+    {
+      "category": "Furniture"
+    },
+    {
+      "category": "Headphones"
+    },
+    {
+      "category": "Home Cinema"
+    },
+    {
+      "category": "Ceiling Speakers"
+    },
+    {
+      "category": "TV"
+    },
+    {
+      "category": "Vinyl"
+    },
+    {
+      "category": "Outlet - Save ££££"
+    }
+  ]
 }

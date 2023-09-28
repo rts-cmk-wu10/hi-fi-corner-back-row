@@ -3,11 +3,11 @@
 
 
 .main__article-slider-container {
-    /* max-width: 600px; */
+   
     height: 400px;
     margin: 0 auto;
     position: relative;
-    /* overflow: hidden; */
+   
 } 
 
 .main__article-slider {

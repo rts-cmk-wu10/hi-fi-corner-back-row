@@ -85,7 +85,7 @@ async function renderProducts() {
                     <img src="${product.image}">
                 </span>
                 <div class="info-container">
-                    <!-- Additional product information can be added here -->
+                    
                 </div>`;
             // Append the product element to the products container
             PRODUCTS_CONTAINER.appendChild(ELEMENT);
