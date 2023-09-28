@@ -1,0 +1,74 @@
+
+.main-event__card {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.main-event__card-image {
+    height: 300px;
+    width: 100%;
+
+}
+
+
+.main__section-text-cards {
+    height :200px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+
+}
+
+.main__section-cards {
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.main__section-headline {
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius: 1px;
+    color: goldenrod;
+}
+
+.main__section-text {
+    color: white;
+}
+
+
+
+
+
+.main-event__card-item {
+    position: relative;
+    display: inline-block;
+}
+
+
+.main-event__card-image {
+    max-width: 100%; /* Ensure the main images don't exceed their container */
+    display: block; /* Add this to ensure proper layout */
+}
+
+
+.main-event__card-item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px; /* Adjust the icon size as needed */
+    color: white; /* Change the icon color as needed */
+    background-color: rgba(0, 0, 0, 0.2); /* Add a semi-transparent background to make the icons visible */
+    padding: 10px; /* Add padding to the icons for better visibility */
+    border-radius: 50%; /* Create a circular background for the icons */
+}

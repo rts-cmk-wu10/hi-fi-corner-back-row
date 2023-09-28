@@ -1,147 +1,100 @@
-//  const PRODUCTS = []
-//  const CATEGORIES = []
-//  const DATALIST = document.querySelector("#products")
-//  const PRODUCTS_CONTAINER = document.querySelector(".products__list")
+// Define an array to store product data
+const PRODUCTS = [];
+// Define an array to store category data
+const CATEGORIES = [];
+// Get a reference to an HTML datalist element with the id "products"
+const DATALIST = document.querySelector("#products");
+// Get a reference to an HTML element with the class "products__list"
+const PRODUCTS_CONTAINER = document.querySelector(".products__list");
 
-//  function convertCategory(category){
-//      return category.toLowerCase().replace(" ", "_") 
-//  }
+// Function to convert category names to lowercase with underscores
+function convertCategory(category) {
+    return category.toLowerCase().replace(" ", "_");
+}
 
-//  fetch(`http://localhost:3000/categories`)
-//      .then(async function (response) {
-//          if (response.status === 200) {
-//              // response.json() returns a promise so we must await this to use it
-//              CATEGORIES.push(...await response.json())
-//          } else {
-//              document.body.innerText += "ups, noget gik galt"
-//          }
-//      }).then(async function () {
-//          // wait for fetch response
-//          await fetch(`http://localhost:3000/products`)
-//            .then(async function (response) {
-//                  if (response.status === 200) {
-//                      PRODUCTS.push(...await response.json())
-//                  } else {
-//                      document.body.innerText += "ups, noget gik galt"
-//                  }
-//              })
-//      }).then(function () {
-//          PRODUCTS.forEach(function (product) {
-//              DATALIST.innerHTML += `<option>${product.title}</option>`
-//          })
-//          const PARAMS = new URLSearchParams(location.search)
-//          const SEARCH = PARAMS.get("search")
-//          const CATEGORY = CATEGORIES[PARAMS.get('category')]
-//          if (!CATEGORY) {
-//              // TODO: handle non-existent category (e.g. show an error on the page)
-//          } else {
-//              const CATEGORY_TITLE_EL = document.querySelector('.category__title')
-//              CATEGORY_TITLE_EL.innerHTML = CATEGORY.category
-//          }
+// Async function to fetch categories and products from a local server
+async function fetchCategoriesAndProducts() {
+    try {
+        // Fetch categories and products concurrently
+        const [categoriesResponse, productsResponse] = await Promise.all([
+            fetch("http://localhost:3000/categories"),
+            fetch("http://localhost:3000/products")
+        ]);
 
-//          let filteredProducts
-//          if (SEARCH) {
-//              filteredProducts = PRODUCTS.filter(product => product.title === SEARCH) 
-//          } else {
-//              filteredProducts = PRODUCTS.filter(product => {
-//                  console.debug(`${product.categories.category} !== ${convertCategory(CATEGORY.category)}`, product.categories.category !== convertCategory(CATEGORY.category))
-//                  if (product.categories.category !== convertCategory(CATEGORY.category)) return false
-//                  return true
-//              })
-//          }
-//          console.debug(filteredProducts)
-//          filteredProducts.forEach(product => {
-//              const ELEMENT = document.createElement("div")
-//              ELEMENT.classList.add("products__list-product")
-//              ELEMENT.innerHTML = `
-//              <span class="imagePlaceholder">
-//              <img src="${product.image}">
-//              </span>
-    
-//              <div class="info-container">
-           
-//              </div>`
-//              PRODUCTS_CONTAINER.appendChild(ELEMENT)
+        // Check if the categories fetch was successful
+        if (categoriesResponse.status === 200) {
+            // Parse the response and add categories to the CATEGORIES array
+            CATEGORIES.push(...await categoriesResponse.json());
+        } else {
+            // Throw an error if the fetch was not successful
+            throw new Error("Failed to fetch categories");
+        }
 
-//             
-//          })
-//      })
+        // Check if the products fetch was successful
+        if (productsResponse.status === 200) {
+            // Parse the response and add products to the PRODUCTS array
+            PRODUCTS.push(...await productsResponse.json());
+        } else {
+            // Throw an error if the fetch was not successful
+            throw new Error("Failed to fetch products");
+        }
+    } catch (error) {
+        // Handle errors by logging to the console and displaying an error message on the page
+        console.error("An error occurred:", error);
+        document.body.innerText += "Oops, something went wrong";
+    }
+}
 
+// Async function to render products on the page
+async function renderProducts() {
+    try {
+        // Fetch categories and products
+        await fetchCategoriesAndProducts();
 
- const PRODUCTS = [];
- const CATEGORIES = [];
- const DATALIST = document.querySelector("#products");
- const PRODUCTS_CONTAINER = document.querySelector(".products__list");
+        // Populate the datalist with product titles
+        PRODUCTS.forEach(function (product) {
+            DATALIST.innerHTML += `<option>${product.title}</option>`;
+        });
 
- function convertCategory(category) {
-     return category.toLowerCase().replace(" ", "_");
- }
+        // Get query parameters from the URL
+        const params = new URLSearchParams(location.search);
+        const search = params.get("search");
+        const categoryIndex = params.get('category');
+        const CATEGORY = CATEGORIES[categoryIndex];
 
- async function fetchCategoriesAndProducts() {
-     try {
-         const [categoriesResponse, productsResponse] = await Promise.all([
-             fetch("http://localhost:3000/categories"),
-             fetch("http://localhost:3000/products")
-         ]);
+        if (!CATEGORY) {
+            // Handle the case where the category does not exist (e.g., show an error on the page)
+        } else {
+            // Get a reference to an HTML element with the class "category__title"
+            const CATEGORY_TITLE_EL = document.querySelector('.category__title');
+            // Set the category title on the page
+            CATEGORY_TITLE_EL.innerHTML = CATEGORY.category;
+        }
 
-         if (categoriesResponse.status === 200) {
-             CATEGORIES.push(...await categoriesResponse.json());
-         } else {
-             throw new Error("Failed to fetch categories");
-         }
+        // Filter products based on search or category
+        const filteredProducts = search
+            ? PRODUCTS.filter(product => product.title === search)
+            : PRODUCTS.filter(product => product.categories.category !== convertCategory(CATEGORY.category));
 
-         if (productsResponse.status === 200) {
-             PRODUCTS.push(...await productsResponse.json());
-         } else {
-             throw new Error("Failed to fetch products");
-         }
-     } catch (error) {
-         console.error("An error occurred:", error);
-         document.body.innerText += "Oops, something went wrong";
-     }
- }
+        // Iterate through filtered products and create product elements
+        filteredProducts.forEach(product => {
+            const ELEMENT = document.createElement("div");
+            ELEMENT.classList.add("products__list-product");
+            ELEMENT.innerHTML = `
+                <span class="imagePlaceholder">
+                    <img src="${product.image}">
+                </span>
+                <div class="info-container">
+                    <!-- Additional product information can be added here -->
+                </div>`;
+            // Append the product element to the products container
+            PRODUCTS_CONTAINER.appendChild(ELEMENT);
+        });
+    } catch (error) {
+        // Handle errors by logging to the console
+        console.error("An error occurred:", error);
+    }
+}
 
- async function renderProducts() {
-     try {
-         await fetchCategoriesAndProducts();
-
-         PRODUCTS.forEach(function (product) {
-             DATALIST.innerHTML += `<option>${product.title}</option>`;
-         });
-
-         const params = new URLSearchParams(location.search);
-         const search = params.get("search");
-         const categoryIndex = params.get('category');
-         const CATEGORY = CATEGORIES[categoryIndex];
-
-         if (!CATEGORY) {
-             // TODO: Handle non-existent category (e.g., show an error on the page)
-         } else {
-             const CATEGORY_TITLE_EL = document.querySelector('.category__title');
-             CATEGORY_TITLE_EL.innerHTML = CATEGORY.category;
-         }
-
-         const filteredProducts = search
-             ? PRODUCTS.filter(product => product.title === search)
-             : PRODUCTS.filter(product => product.categories.category !== convertCategory(CATEGORY.category));
-
-         filteredProducts.forEach(product => {
-             const ELEMENT = document.createElement("div");
-             ELEMENT.classList.add("products__list-product");
-             ELEMENT.innerHTML = `
-             <span class="imagePlaceholder">
-             <img src="${product.image}">
-             </span>
-    
-             <div class="info-container">
-           
-             </div>`;
-             PRODUCTS_CONTAINER.appendChild(ELEMENT);
-         });
-     } catch (error) {
-         console.error("An error occurred:", error);
-     }
- }
-
- // Call the renderProducts function to start rendering products
- renderProducts()
+// Call the renderProducts function to start rendering products
+renderProducts();
