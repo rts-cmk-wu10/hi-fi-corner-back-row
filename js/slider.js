@@ -17,10 +17,9 @@ async function fetchPowerAmplifiers() {
         const response = await fetch('http://localhost:3000/products');
         if (response.status === 200) {
             const data = await response.json();
-            // Filter products for "Amplifiers" category and "Power Amplifiers" subcategory
+            // Filter products for "amplifiers" subcategory
             powerAmplifiers = data.filter(product => (
-                product.categories.category === convertCategory("Amplifiers") &&
-                product.categories.subcategory === convertCategory("Power Amplifiers")
+                product.categories.subcategory === "Amplifiers"
             ));
             // Show the initial image
             showImage(currentIndex);
