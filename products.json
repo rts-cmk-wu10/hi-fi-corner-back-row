@@ -154,18 +154,6 @@
         },
         {
           "id": 16,
-          "title": "Sennheiser Headphones",
-          "price": 149.99,
-
-          "image": "Produktbilleder/headphones/Sennheiser-headphones.jpg",
-
-          "categories": {
-            "category": "Audio",
-            "subcategory": "Headphones"
-          }
-        },
-        {
-          "id": 17,
           "title": "Harbeth HL7ES2",
           "price": 1899.99,
           "image": "Produktbilleder/hojtalere/harbeth_hl7es2.jpg",
@@ -175,7 +163,7 @@
           }
         },
         {
-          "id": 18,
+          "id": 17,
           "title": "Harbeth Monitor 30",
           "price": 2599.99,
           "image": "Produktbilleder/hojtalere/harbeth_monitor30.jpg",
@@ -185,7 +173,7 @@
           }
         },
         {
-          "id": 19,
+          "id": 18,
           "title": "Harbeth P3ES2",
           "price": 1399.99,
           "image": "Produktbilleder/hojtalere/harbeth_p3es2.jpg",
@@ -195,7 +183,7 @@
           }
         },
         {
-          "id": 20,
+          "id": 19,
           "title": "Creek A50I",
           "price": 599.99,
           "image": "Produktbilleder/int_forstaerkere/creek_a50I.jpg",
@@ -205,7 +193,7 @@
           }
         },
         {
-          "id": 21,
+          "id": 20,
           "title": "Creek Classic 5350SE",
           "price": 799.99,
           "image": "Produktbilleder/int_forstaerkere/creek_classic5350SE.jpg",
@@ -215,7 +203,7 @@
           }
         },
         {
-          "id": 22,
+          "id": 21,
           "title": "Creek Destiny Amp",
           "price": 1199.99,
           "image": "Produktbilleder/int_forstaerkere/creek_destinyamp.jpg",
@@ -225,7 +213,7 @@
           }
         },
         {
-          "id": 23,
+          "id": 22,
           "title": "Manley Snapper",
           "price": 2499.99,
           "image": "Produktbilleder/int_forstaerkere/manley_snapper.jpg",
@@ -235,7 +223,7 @@
           }
         },
         {
-          "id": 24,
+          "id": 23,
           "title": "Manley Stingray",
           "price": 2999.99,
           "image": "Produktbilleder/int_forstaerkere/Manley_Stingray.jpg",
@@ -245,7 +233,7 @@
           }
         },
         {
-          "id": 25,
+          "id": 24,
           "title": "Pro-Ject Debut 3 (Black)",
           "price": 349.99,
           "image": "Produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg",
@@ -254,7 +242,7 @@
           }
         },
         {
-          "id": 26,
+          "id": 25,
           "title": "Pro-Ject Debut III (Red)",
           "price": 349.99,
 
@@ -265,20 +253,18 @@
           }
         },
         {
-          "id": 27,
+          "id": 26,
           "title": "Pro-Ject Debut III (Yellow)",
           "price": 349.99,
           
           "image": "Produktbilleder/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
-
-          "image": "Produktbilleder/pladespillere/Pro_ject_DebutIII_yellow_1.jpg",
 
           "categories": {
             "category": "Turntables"
           }
         },
         {
-          "id": 28,
+          "id": 27,
           "title": "Pro-Ject RPM 10",
           "price": 999.99,
           "image": "Produktbilleder/pladespillere/Pro_ject_rpm10.jpg",
@@ -287,7 +273,7 @@
           }
         },
         {
-          "id": 29,
+          "id": 28,
           "title": "Pro-Ject RPM 5",
           "price": 799.99,
           "image": "Produktbilleder/pladespillere/Pro_ject_rpm_5.jpg",
@@ -296,7 +282,7 @@
           }
         },
         {
-          "id": 30,
+          "id": 29,
           "title": "Jolida JD102B",
           "price": 799.99,
           "image": "Produktbilleder/roer_forstaerkere/jolida_JD102b.jpg",
@@ -306,7 +292,7 @@
           }
         },
         {
-          "id": 31,
+          "id": 30,
           "title": "Jolida JD202A",
           "price": 999.99,
           "image": "Produktbilleder/roer_forstaerkere/jolida_JD202a.jpg",
@@ -316,7 +302,7 @@
           }
         },
         {
-          "id": 32,
+          "id": 31,
           "title": "Jolida JD300B",
           "price": 1499.99,
           "image": "Produktbilleder/roer_forstaerkere/jolida_JD300b.jpg",
@@ -326,7 +312,7 @@
           }
         },
         {
-          "id": 33,
+          "id": 32,
           "title": "Jolida JD302B",
           "price": 1999.99,
           "image": "Produktbilleder/roer_forstaerkere/jolida_JD302b.jpg",
@@ -336,7 +322,7 @@
           }
         },
         {
-          "id": 34,
+          "id": 33,
           "title": "Jolida JD502B",
           "price": 2999.99,
           "image": "Produktbilleder/roer_forstaerkere/jolida_JD502b.jpg",
