@@ -13,23 +13,14 @@ function convertCategory(category) {
 
 // Function to fetch JSON data
 async function fetchPowerAmplifiers() {
-    try {
-        const response = await fetch('http://localhost:3000/products');
-        if (response.status === 200) {
-            const data = await response.json();
-            // Filter products for "amplifiers" subcategory
-            powerAmplifiers = data.filter(product => (
-                product.categories.subcategory === "Amplifiers"
-            ));
-            // Show the initial image
-            showImage(currentIndex);
-        } else {
-            throw new Error('Failed to fetch data');
-        }
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-
+    fetch('http://localhost:3000/products')
+        .then(res => res.json())
+        .then(data => {
+            data.forEach((element, index) => {
+                if (index == 0) { showImage(index) }
+                powerAmplifiers.push(element.image)
+            })
+        })
 }
 
 // Function to display an image at a given index
@@ -41,7 +32,7 @@ function showImage(index) {
     }
 
     // Get the URL of the current image and set it as the background
-    const Urlimage = powerAmplifiers[currentIndex].image;
+    const Urlimage = powerAmplifiers[currentIndex];
     const img = document.createElement('img')
     img.src = Urlimage;
     slider.replaceChildren(img)
