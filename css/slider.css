@@ -1,7 +1,4 @@
 
-
-
-
 .main__article-slider-container {
    
     height: 400px;
@@ -27,7 +24,7 @@
     width: 50%;
 }
 
-button {
+.main__article-buttons {
     background: none;
     padding: 10px 20px;
     font-size: xxx-large;

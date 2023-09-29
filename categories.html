@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>categories</title>
 </head>
+
 <body>
-    <form>
-        <label>
-            <input autocomplete="off" type="search" name="search" list="products" class="products__search">
-            <button class="searchButton" type="submit">søg</button>
-            
-            <datalist id="products">
-                
-            </datalist>
-        </label>
-    </form>
-    <h1 class="category__title"></h1>
-    <div class="products__list">
-    </div>
+
+    <header class="categories__header">
+        <section class="categories_header__top">
+            <form>
+                <label>
+                    <input autocomplete="off" type="search" name="search" placeholder="Search entire store here..."
+                        
+                    list="products" class="products__search">
+                        
+                    <button class="categories__searchButton" type="submit">søg</button>
+
+                    <datalist id="products">
+
+                    </datalist>
+                </label>
+            </form>
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </section>
+        <nav class="categories_header__bottom">
+            <ul class=" nav-menu">
+                <li class="nav-menu__item"><a class="nav-menu__link" href="frontpage.html">HOME</a></li>
+                <li class="nav-menu__item">ABOUT US</li>
+                <li class="nav-menu__item">BRANDS</li>
+                <li class="nav-menu__item">BLOG</li>
+                <li class="nav-menu__item">EVENTS</li>
+                <li class="nav-menu__item"><a class="nav-menu__link" href="categories.html?category=0">SHOP</a></li>
+                <li class="nav-menu__item">CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="main__content">
+            <div class="main__shopContainer">
+                <h4 class="category__title"></h4>
+                <p>
+                   Integrated Amplifiers 
+                   Power Amplifiers
+                   Preamplifiers
+                </p>
+            </div> 
+            <div class="products__list"></div>
+        </article>
+    </main>
     <script src="js/products.js"></script>
 </body>
+
 </html>

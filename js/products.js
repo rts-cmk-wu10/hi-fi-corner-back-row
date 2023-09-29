@@ -84,12 +84,15 @@ async function renderProducts() {
                 <span class="imagePlaceholder">
                     <img src="${product.image}">
                 </span>
-                <div class="info-container">
-                    
-                </div>`;
+                `;
             // Append the product element to the products container
             PRODUCTS_CONTAINER.appendChild(ELEMENT);
         });
+        
+        
+
+
+
     } catch (error) {
         // Handle errors by logging to the console
         console.error("An error occurred:", error);
