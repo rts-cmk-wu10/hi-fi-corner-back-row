@@ -43,6 +43,7 @@ async function fetchCategoriesAndProducts() {
         console.error("An error occurred:", error);
         document.body.innerText += "Oops, something went wrong";
     }
+    console.log(PRODUCTS)
 }
 
 // Async function to render products on the page
@@ -87,6 +88,7 @@ async function renderProducts() {
                 `;
             // Append the product element to the products container
             PRODUCTS_CONTAINER.appendChild(ELEMENT);
+            
         });
         
         
