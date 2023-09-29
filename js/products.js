@@ -81,7 +81,6 @@ async function renderProducts() {
             const ELEMENT = document.createElement("div");
             ELEMENT.classList.add("products__list-product");
             ELEMENT.innerHTML = `
-                
                 <span class="imagePlaceholder">
                     <img src="${product.image}">
                 </span>
@@ -89,6 +88,7 @@ async function renderProducts() {
             // Append the product element to the products container
             PRODUCTS_CONTAINER.appendChild(ELEMENT);
         });
+        
         
 
 
