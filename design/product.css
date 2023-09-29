@@ -1,0 +1,50 @@
+.info{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+.left {
+    
+    min-height: 600px;
+    width: 50%;
+}
+.cd {
+    height: 100px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+.dvd {
+    width: 30px;
+    height: 20px;
+}
+.rinfo {
+    right: 100%;
+}
+.linfo {
+    left: 1000%;
+}
+
+.right {
+    
+    min-height: 600px;
+    width: 50%;
+}
+
+
+.link {
+    width: 100%;
+    background-color: black;
+    color: #a39161;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
