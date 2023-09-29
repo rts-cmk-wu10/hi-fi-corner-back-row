@@ -98,6 +98,6 @@ async function renderProducts() {
         console.error("An error occurred:", error);
     }
 }
-
+console.log('remove');
 // Call the renderProducts function to start rendering products
 renderProducts();
