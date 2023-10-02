@@ -1,3 +1,70 @@
+// const slider = document.querySelector(".main__article-slider");
+// const prevBtn = document.querySelector("#prevBtn");
+// const nextBtn = document.querySelector("#nextBtn");
+
+// // Initialize variables
+// let currentIndex = 0;
+// let powerAmplifiers = [];
+
+// // Function to convert category names to lowercase with underscores
+// function convertCategory(category) {
+//     return category.toLowerCase().replace(" ", "_");
+// }
+
+// // Function to fetch JSON data
+// async function fetchPowerAmplifiers() {
+//     try {
+//         const response = await fetch('http://localhost:3000/products');
+//         if (response.status === 200) {
+//             const data = await response.json();
+//             // Filter products for "amplifiers" subcategory
+//             powerAmplifiers = data.filter(product => (
+//                 product.categories.subcategory === "Amplifiers"
+//             ));
+//             // Show the initial image
+//             showImage(currentIndex);
+//         } else {
+//             throw new Error('Failed to fetch data');
+//         }
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//     }
+
+// }
+
+
+
+
+// // Function to display an image at a given index
+// function showImage(index) {
+//     if (index < 0) {
+//         currentIndex = powerAmplifiers.length - 1;
+//     } else if (index >= powerAmplifiers.length) {
+//         currentIndex = 0;
+//     }
+
+//     // Get the URL of the current image and set it as the background
+//     const Urlimage = powerAmplifiers[currentIndex].image;
+//     const img = document.createElement('img')
+//     img.src = Urlimage;
+//     slider.replaceChildren(img)
+// }
+
+// // Event listener for the previous button
+// prevBtn.addEventListener('click', () => {
+//     currentIndex--;
+//     showImage(currentIndex);
+// });
+
+// // Event listener for the next button
+// nextBtn.addEventListener('click', () => {
+//     currentIndex++;
+//     showImage(currentIndex);
+// });
+
+// // Fetch power amplifiers data when the page loads
+// fetchPowerAmplifiers();
+
 const slider = document.querySelector(".main__article-slider");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
@@ -6,21 +73,22 @@ const nextBtn = document.querySelector("#nextBtn");
 let currentIndex = 0;
 let powerAmplifiers = [];
 
-// Function to convert category names to lowercase with underscores
-function convertCategory(category) {
-    return category.toLowerCase().replace(" ", "_");
-}
-
-// Function to fetch JSON data
-async function fetchPowerAmplifiers() {
+// Function to fetch JSON data and handle errors
+function fetchPowerAmplifiers() {
     fetch('http://localhost:3000/products')
-        .then(res => res.json())
-        .then(data => {
-            data.forEach((element, index) => {
-                if (index == 0) { showImage(index) }
-                powerAmplifiers.push(element.image)
-            })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch data');
+            }
+            return response.json();
         })
+        .then((data) => {
+            powerAmplifiers = data.map((element) => element.image);
+            showImage(currentIndex);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
 
 // Function to display an image at a given index
@@ -31,11 +99,15 @@ function showImage(index) {
         currentIndex = 0;
     }
 
-    // Get the URL of the current image and set it as the background
-    const Urlimage = powerAmplifiers[currentIndex];
-    const img = document.createElement('img')
-    img.src = Urlimage;
-    slider.replaceChildren(img)
+    // Create a new img element
+    const img = document.createElement('img');
+    img.src = powerAmplifiers[currentIndex];
+
+    // Remove any existing image in the slider
+    slider.innerHTML = '';
+
+    // Append the new image to the slider
+    slider.appendChild(img);
 }
 
 // Event listener for the previous button
