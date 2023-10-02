@@ -2,62 +2,66 @@ const slider = document.querySelector(".main__article-slider");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
-// Initialize variables
+// Initialize variables to keep track of the current image index and store image URLs
 let currentIndex = 0;
 let powerAmplifiers = [];
 
-// Function to convert category names to lowercase with underscores
-function convertCategory(category) {
-    return category.toLowerCase().replace(" ", "_");
-}
-
-// Function to fetch JSON data
-async function fetchPowerAmplifiers() {
-    try {
-        const response = await fetch('http://localhost:3000/products');
-        if (response.status === 200) {
-            const data = await response.json();
-            // Filter products for "amplifiers" subcategory
-            powerAmplifiers = data.filter(product => (
-                product.categories.subcategory === "Amplifiers"
-            ));
-            // Show the initial image
+// Function to fetch JSON data for power amplifiers
+function fetchPowerAmplifiers() {
+    // Use the fetch API to retrieve data from a specified URL (http://localhost:3000/products)
+    fetch('http://localhost:3000/products')
+        .then((response) => {
+            // Check if the response status is OK (status code 200)
+            if (!response.ok) {
+                // If not OK, throw an error to handle it in the catch block
+                throw new Error('Failed to fetch data');
+            }
+            // Parse the response as JSON
+            return response.json();
+        })
+        .then((data) => {
+            // Extract image URLs from the JSON data and store them in the powerAmplifiers array
+            powerAmplifiers = data.map((element) => element.image);
+            // Display the first image when data is successfully fetched
             showImage(currentIndex);
-        } else {
-            throw new Error('Failed to fetch data');
-        }
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-
+        })
+        .catch((error) => {
+            // Handle errors by logging them to the console
+            console.error('Error:', error);
+        });
 }
-
-
-
 
 // Function to display an image at a given index
 function showImage(index) {
+    // Ensure the index wraps around to the first or last image if it goes out of bounds
     if (index < 0) {
         currentIndex = powerAmplifiers.length - 1;
     } else if (index >= powerAmplifiers.length) {
         currentIndex = 0;
     }
 
-    // Get the URL of the current image and set it as the background
-    const Urlimage = powerAmplifiers[currentIndex].image;
-    const img = document.createElement('img')
-    img.src = Urlimage;
-    slider.replaceChildren(img)
+    // Create a new img element
+    const img = document.createElement('img');
+    // Set the source attribute of the img element to the current image URL
+    img.src = powerAmplifiers[currentIndex];
+
+    // Remove any existing image in the slider
+    slider.innerHTML = '';
+
+    // Append the new image to the slider to display it
+    slider.appendChild(img);
 }
 
 // Event listener for the previous button
 prevBtn.addEventListener('click', () => {
+    // Decrement the current index and update the displayed image
     currentIndex--;
     showImage(currentIndex);
 });
 
 // Event listener for the next button
 nextBtn.addEventListener('click', () => {
+    // Increment the current index and update the displayed image
     currentIndex++;
     showImage(currentIndex);
 });
