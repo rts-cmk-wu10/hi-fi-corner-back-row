@@ -62,7 +62,7 @@ async function renderProducts() {
         const CATEGORY = CATEGORIES[categoryIndex];
 
         if (!CATEGORY) {
-            // Handle the case where the category does not exist (e.g., show an error on the page)
+            // Handle the case where the category does not exist (show an error on the page)
         } else {
             // Get a reference to an HTML element with the class "category__title"
             const CATEGORY_TITLE_EL = document.querySelector(".category__title");
