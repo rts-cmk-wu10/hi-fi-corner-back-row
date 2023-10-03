@@ -4,7 +4,7 @@ const nextBtn = document.querySelector("#nextBtn");
 
 // Initialize variables to keep track of the current image index and store image URLs
 let currentIndex = 0;
-let powerAmplifiers = [];
+let products = [];
 
 // Function to fetch JSON data for products
 function fetchproducts() {
@@ -20,8 +20,8 @@ function fetchproducts() {
             return response.json();
         })
         .then((data) => {
-            // Extract image URLs from the JSON data and store them in the powerAmplifiers array
-            powerAmplifiers = data.map((element) => element.image);
+            // Extract image URLs from the JSON data and store them in the products array
+            products = data.map((element) => element.image);
             // Display the first image when data is successfully fetched
             showImage(currentIndex);
         })
@@ -35,14 +35,14 @@ function fetchproducts() {
 function showImage(index) {
     // Ensure the index wraps around to the first or last image if it goes out of bounds
     if (index < 0) {
-        currentIndex = powerAmplifiers.length - 1;
-    } else if (index >= powerAmplifiers.length) {
+        currentIndex = products.length - 1;
+    } else if (index >= products.length) {
         currentIndex = 0;
     }
     // Create a new img element
     const img = document.createElement("img");
     // Set the source attribute of the img element to the current image URL
-    img.src = powerAmplifiers[currentIndex];
+    img.src = products[currentIndex];
 
     // Remove any existing image in the slider
     slider.innerHTML = "";
