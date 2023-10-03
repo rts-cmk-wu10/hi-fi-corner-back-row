@@ -2,9 +2,7 @@
 const PRODUCTS = [];
 // Define an array to store category data
 const CATEGORIES = [];
-// Get a reference to an HTML datalist element with the id "products"
 const DATALIST = document.querySelector("#products");
-// Get a reference to an HTML element with the class "products__list"
 const PRODUCTS_CONTAINER = document.querySelector(".products__list");
 
 // Function to convert category names to lowercase with underscores
@@ -67,7 +65,7 @@ async function renderProducts() {
             // Handle the case where the category does not exist (e.g., show an error on the page)
         } else {
             // Get a reference to an HTML element with the class "category__title"
-            const CATEGORY_TITLE_EL = document.querySelector('.category__title');
+            const CATEGORY_TITLE_EL = document.querySelector(".category__title");
             // Set the category title on the page
             CATEGORY_TITLE_EL.innerHTML = CATEGORY.category;
         }
@@ -100,6 +98,5 @@ async function renderProducts() {
         console.error("An error occurred:", error);
     }
 }
-console.log('remove');
 // Call the renderProducts function to start rendering products
 renderProducts();

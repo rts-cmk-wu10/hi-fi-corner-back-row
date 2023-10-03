@@ -8,7 +8,7 @@ let powerAmplifiers = [];
 
 // Function to fetch JSON data for power amplifiers
 function fetchPowerAmplifiers() {
-    // Use the fetch API to retrieve data from a specified URL (http://localhost:3000/products)
+    // Use the fetch API to retrieve data from a specified URL 
     fetch('http://localhost:3000/products')
         .then((response) => {
             // Check if the response status is OK (status code 200)
@@ -39,7 +39,6 @@ function showImage(index) {
     } else if (index >= powerAmplifiers.length) {
         currentIndex = 0;
     }
-
     // Create a new img element
     const img = document.createElement('img');
     // Set the source attribute of the img element to the current image URL
