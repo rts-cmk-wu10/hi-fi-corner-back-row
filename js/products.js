@@ -64,7 +64,6 @@ async function renderProducts() {
         if (!CATEGORY) {
             // Handle the case where the category does not exist (show an error on the page)
         } else {
-            // Get a reference to an HTML element with the class "category__title"
             const CATEGORY_TITLE_EL = document.querySelector(".category__title");
             // Set the category title on the page
             CATEGORY_TITLE_EL.innerHTML = CATEGORY.category;
