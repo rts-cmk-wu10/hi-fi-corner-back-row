@@ -27,7 +27,7 @@ function fetchproducts() {
         })
         .catch((error) => {
             // Handle errors by logging them to the console
-            console.error('Error:', error);
+            console.error("Error:", error);
         });
 }
 
