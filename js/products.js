@@ -58,7 +58,7 @@ async function renderProducts() {
         // Get query parameters from the URL
         const params = new URLSearchParams(location.search);
         const search = params.get("search");
-        const categoryIndex = params.get('category');
+        const categoryIndex = params.get("category");
         const CATEGORY = CATEGORIES[categoryIndex];
 
         if (!CATEGORY) {

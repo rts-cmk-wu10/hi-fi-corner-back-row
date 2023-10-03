@@ -9,12 +9,12 @@ let powerAmplifiers = [];
 // Function to fetch JSON data for products
 function fetchproducts() {
     // Use the fetch API to retrieve data from a specified URL 
-    fetch('http://localhost:3000/products')
+    fetch("http://localhost:3000/products")
         .then((response) => {
             // Check if the response status is OK (status code 200)
             if (!response.ok) {
                 // If not OK, throw an error 
-                throw new Error('Failed to fetch data');
+                throw new Error("Failed to fetch data");
             }
             // Parse the response as JSON
             return response.json();
@@ -40,26 +40,26 @@ function showImage(index) {
         currentIndex = 0;
     }
     // Create a new img element
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     // Set the source attribute of the img element to the current image URL
     img.src = powerAmplifiers[currentIndex];
 
     // Remove any existing image in the slider
-    slider.innerHTML = '';
+    slider.innerHTML = "";
 
     // Append the new image to the slider to display it
     slider.appendChild(img);
 }
 
 // Event listener for the previous button
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
     // Decrement the current index and update the displayed image
     currentIndex--;
     showImage(currentIndex);
 });
 
 // Event listener for the next button
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener("click", () => {
     // Increment the current index and update the displayed image
     currentIndex++;
     showImage(currentIndex);
