@@ -13,7 +13,7 @@ function fetchproducts() {
         .then((response) => {
             // Check if the response status is OK (status code 200)
             if (!response.ok) {
-                // If not OK, throw an error to handle it in the catch block
+                // If not OK, throw an error 
                 throw new Error('Failed to fetch data');
             }
             // Parse the response as JSON
