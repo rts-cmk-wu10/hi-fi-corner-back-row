@@ -6,8 +6,8 @@ const nextBtn = document.querySelector("#nextBtn");
 let currentIndex = 0;
 let powerAmplifiers = [];
 
-// Function to fetch JSON data for amplifiers
-function fetchAmplifiers() {
+// Function to fetch JSON data for products
+function fetchproducts() {
     // Use the fetch API to retrieve data from a specified URL 
     fetch('http://localhost:3000/products')
         .then((response) => {
@@ -66,4 +66,4 @@ nextBtn.addEventListener('click', () => {
 });
 
 // Fetch power amplifiers data when the page loads
-fetchAmplifiers();
+fetchproducts();
